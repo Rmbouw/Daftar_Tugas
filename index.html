@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAFTAR TUGAS </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="main-header">
+            <h1><i class="fa-solid fa-graduation-cap"></i> DAFTAR TUGAS</h1>
+            <p>Daftar tugas yang harus di selesaikan.</p>
+        </header>
+        <div class="dashboard-grid"`>
+            <div class="sidebar">
+                <div class="card progress-card">
+                    <div class="progress-header">
+                    <h3>Progress Pengerjaan</h3>
+                        <span id="progress-text">0%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <p id="stats-text">0 dari 0 target diselesaikan</p>
+                </div>
+
+                <div class="card form-card">
+                    <h3>Tambahkan Tugas Baru</h3>
+                    <form id="target-form">
+                        <div class="form-group">
+                            <label for="target-title">Nama Tugas</label>
+                            <input type="text" id="target-title" placeholder="Contoh: Agama, Algoritma dll" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="target-category">Judul Tugas Yang Harus Dikerjakan</label>
+                            <input type="text" id="target-category" placeholder="Mau mengerjakan tugas apa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="target-deadline">batas Waktu/Deadline</label>
+                            <input type="date" id="target-deadline" required>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fa-solid fa-plus"></i> Tambahkan Tugas
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="card list-card">
+                    <div class="list-header">
+                        <h3>Daftar Tugas</h3>
+                        <span id="badge-count">0 Total</span>
+                    </div>
+
+                    <div id="target-list">
+                        <div id="empty-state" class="empty-state">
+                            <i class="fa-regular fa-folder-open"></i>
+                            <P>Belum ada Daftar Tugas</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
