@@ -289,3 +289,26 @@ body {
 .target-item.completed .btn-check {
     color: #10b981;
 }
+
+#target-list {
+    max-height: 290px; 
+    overflow-y: auto;  
+    padding-right: 4px; 
+}
+
+#target-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#target-list::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+#target-list::-webkit-scrollbar-thumb {
+    background: #a1a1aa;
+    border-radius: 10px;
+}
+
+#target-list::-webkit-scrollbar-thumb:hover {
+    background: #71717a; 
+}
